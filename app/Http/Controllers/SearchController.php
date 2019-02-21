@@ -4,12 +4,9 @@ use Crew\Unsplash\Connection;
 use Illuminate\Http\Request;
 use Crew;
 
-
 class SearchController extends Controller
 {
 
-
-	// Search Keyword
     public function search(Request $request,  $keyword, $pageNum = NULL)
 	{
 
@@ -18,6 +15,8 @@ class SearchController extends Controller
 		$per_page = env("UNSPLASH_PER_PAGE");
 
 		try {
+
+			// Initialize the API connection
 			Crew\Unsplash\HttpClient::init([
 			 	'applicationId'	=> env("UNSPLASH_ACCESS"),
 			 	'secret'		=> env("UNSPLASH_SECRET"),
@@ -25,12 +24,15 @@ class SearchController extends Controller
 			 	'utmSource' 	=> 'Photo Gallery'
 			]);
 
+			// Send the search query to API
 			$response 	 = Crew\Unsplash\Search::photos($keyword, $pageNum, $per_page);
+
+			// Data passing to view fetched from response object
 			$getPhotos   = (object) $response->getResults();
 			$foundPhotos = $response->getTotal();
 			$totalPages  = $response->getTotalPages();
 
-
+			// When paginate page doesn't exist
 			if( $pageNum > $totalPages ) :
 				$pageNum = 0;
 				return view('searchResult', compact('foundPhotos', 'pageNum'));
