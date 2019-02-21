@@ -1,14 +1,12 @@
-## About Laravel
+## About Photo Gallery
 
-Photo Gallery is built using [Laravel](https://laravel.com) and cosumes [Unsplash API](https://unsplash.com/developers) to search over 850K photos.
-
-- (https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Photo Gallery is built using [Laravel](https://laravel.com) and cosumes [Unsplash API](https://unsplash.com/developers) to search over 850K photos. some of basic features are as follows: 
+- Search photos using a keyword or phrases
+- Listing 10 photos per page
+- Pagination to navigate thru search result pages
+- Download link for high-res photo
+- Likes count for each photo
+- ** COMING SOON - Photo details (exif meta-date, location, user info ... )
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
