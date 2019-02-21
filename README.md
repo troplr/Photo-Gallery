@@ -6,7 +6,7 @@ Photo Gallery is built using [Laravel](https://laravel.com) and cosumes [Unsplas
 - Pagination to navigate thru search result pages
 - Download link for high-res photo
 - Likes count for each photo
-- ** COMING SOON - Photo details (exif meta-date, location, user info ... )
+- ** COMING SOON ** - Photo details (exif meta-date, location, user info ... ) 
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
