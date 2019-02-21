@@ -20,7 +20,7 @@ After downloading the app, open the project within **terminal** and run the foll
 - **php artisan storage:link** (creating soft link to serve storge directory)
 
 ## Configuration
-You are able to use your own **Unsplash API Key** configuring **.env** file. however my API credentials are already set to use for 50 Free Requests/hr.
+You are able to use your own **Unsplash API Key** by configuring the **.env** file. however my API credentials are already set to use for 50 Free Requests/hr.
 
 Here are some settings/variables you can change within **.env** file
 - **UNSPLASH_SECRET** (already using my creds)
