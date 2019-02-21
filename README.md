@@ -15,7 +15,7 @@ Since the application is using Laravel PHP framework, same Server Requirements a
 **NOTE!** Remember Laravel uses **public** directory as the root to whole project while setting it up to your local server.
 
 ## Installation
-After downloading the app, open the project within terminal and run the following commands to install all packages and dependencies:
+After downloading the app, open the project within **terminal** and run the following commands to install all packages and dependencies:
 - **composer install**  (takes few mins to install all dependencies)
 - **php artisan storage:link** (creating soft link to serve storge directory)
 
