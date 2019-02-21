@@ -12,9 +12,10 @@ Photo Gallery is built using [Laravel](https://laravel.com) and cosumes [Unsplas
 ## Requirements
 Since the application is using Laravel PHP framework, same Server Requirements applies here as any other Laravel application. However i have best experience using [MAMP](https://www.mamp.info/en/) to setup a fast and easy-to-use local server.
 
-**NOTE!** Remember Laravel uses **public** directory as the root to whole project while setting it up your local server.
+**NOTE!** Remember Laravel uses **public** directory as the root to whole project while setting it up to your local server.
 
 ## Installation
+After downloading the app, open the project within terminal and run the following commands to install all packages and dependencies:
 - **composer install**  (takes few mins to install all dependencies)
 - **php artisan storage:link** (creating soft link to serve storge directory)
 

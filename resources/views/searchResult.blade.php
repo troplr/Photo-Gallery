@@ -8,7 +8,6 @@
     </header>
 @endsection
 
-
 @section('content')
 
 	@if( $pageNum != 0 )
