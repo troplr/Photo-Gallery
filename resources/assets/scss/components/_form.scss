@@ -1,0 +1,62 @@
+.form{
+
+	&__group{
+		&:not(:last-child){
+			margin-bottom: .5rem;
+		}
+	}
+
+	&__input{
+		font-family: inherit;
+		font-size: $font-size-base;
+		padding: 1.5rem 2rem;
+		border-radius: .2rem;
+		background-color: rgba($white, .4);
+		border: none;
+		border-bottom: .3rem solid transparent;
+		width: 100%;
+		display: block;
+		transition: all .5s;
+		box-shadow: 0 1rem 2rem rgba($black, .1);
+		font-weight: $bold-2;
+		border-radius: $border-radius;
+
+		&::-webkit-input-placeholder{ // only works on Safari and Chrome
+			color: $gray-500;
+		}
+
+		&:focus{
+			outline: none;
+			box-shadow: 0 1rem 2.5rem rgba($black, .3);
+			border-bottom: .3rem solid $green;
+		}
+
+		&:focus:invalid{
+			border-bottom: .3rem solid $red;
+		}
+	}
+
+	&__label{
+		font-size: $font-size-sm;
+		font-weight: 700;
+		margin-left: 2rem;
+		margin-top: .7rem;
+		display: block;
+		transition: all .5s;
+		text-align: left;
+		color: $white;
+	}
+	
+	&__input:placeholder-shown + &__label { // when placeholder is shown / focused / selected
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-4rem);
+	}
+
+	svg{
+		display: inline-block;
+		height: $font-size-md;
+		position: relative;
+		top: 2px;
+	}
+}

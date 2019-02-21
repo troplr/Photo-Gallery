@@ -1,0 +1,36 @@
+/*!
+=========================================================
+* Photo Gallery - Laravel 5.7 + Unsplash API
+=========================================================
+Theme Name: Photo Gallery
+Theme URI: https://github.com/HabedyOmid/Photo-Gallery
+Author: Omid Habedy
+Author URI: https://omidhabedy.me/
+Description: This application searches over 850K photos consuming unsplash.com API
+License: GNU General Public License v2 or later
+=========================================================
+*/
+
+// Vendors
+@import "vendors/bootsrap4.3/functions";
+@import "vendors/bootsrap4.3/variables";
+@import "vendors/bootsrap4.3/mixins";
+@import "vendors/bootsrap4.3/grid";
+
+
+// Custom - CSS/SASS Architecture 7-1 Pattern - BEM (Block Element Modifier)
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/typography";
+@import "base/base";
+@import "base/utilities";
+
+@import "components/header";
+@import "components/buttons";
+@import "components/form";
+@import "components/card";
+@import "components/navigation";
+@import "components/alert";
+
+@import "layouts/sections";

@@ -1,0 +1,15 @@
+.alert{
+	border: 1px solid $red;
+	padding: 3rem;
+	margin: 3.5rem 0;
+	text-align: center;
+	display: flex;
+	border-radius: $border-radius;
+	background-color: rgba($red, .15);
+	color: $red;
+	font-weight: $bold-2;
+
+	p{
+		width: 100%;
+	}
+}

@@ -1,0 +1,45 @@
+.btn{
+	&,
+	&:link,
+	&:visited{
+		text-transform: uppercase;
+		text-decoration: none;
+		display: inline-block;
+		border-radius: $border-radius;
+		transition: all .3s;
+		position: relative;
+		letter-spacing: .1rem;
+		font-weight: 400;
+		padding: 1.3rem 2rem;
+		font-size: $font-size-md;
+		letter-spacing: .2rem;
+
+
+		// This is for <button> element
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	&:hover{
+		transform: translateY(-2px);
+		box-shadow: 0 1rem 3rem rgba($black,.3);
+	}
+
+	&:active,
+	&:focus{
+		outline: none;
+		transform: translateY(0px);
+		box-shadow: 0 .3rem 1rem rgba($black,.2);
+	}
+
+	&_white{
+		background: $white;
+		color: $black;
+	}
+
+	&_primary{
+		background-color: $primary-light;
+		color: $white;
+	}
+}

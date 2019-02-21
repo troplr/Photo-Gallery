@@ -1,0 +1,88 @@
+// Gallery Wraper
+.gallery{
+	z-index: 100;
+	position: relative;
+	
+
+	&__wrapper{
+		padding: 3rem 2rem 0 2rem;
+		padding-bottom: 0;
+		background-color: $white;
+		border: .1rem solid $border-color;
+		box-shadow: $box-shadow;
+		margin-top: -11.5rem;
+		border-radius: $border-radius;
+	}
+
+	@include media-breakpoint-down(sm) {
+		&__wrapper{
+			padding: 1.5rem;
+		}
+	}
+}
+
+
+// Pagination
+.pagination{
+	padding: 6rem 0;
+	text-align: center;
+
+	&__list{
+		list-style: none;
+	}
+
+	&__item{
+		display: inline-block;
+
+		&:not(:last-child){
+			margin-right: 1rem;
+		}
+	}
+
+	&__link:link,
+	&__link:visited{
+		padding: 1rem 1.7rem;
+		background-color: $white;
+		color: $body-color;
+		display: inline-block;
+		border-radius: $border-radius;
+		text-decoration: none;
+		font-weight: $bold-2;
+		box-shadow: $box-shadow;
+		transition: all .3s;
+		border: .1rem solid $border-color;
+
+		span{
+			display: inline-block;
+			transition: all .3s;
+		}
+
+		&:hover,
+		&:active{
+			transform: translateY(-2px);
+		}
+
+		&.pre{
+			&:hover,
+			&:active{
+				span{
+					transform: translateX(-.5rem);
+				}
+			}
+		}
+
+		&.next{
+			&:hover,
+			&:active{
+				span{
+					transform: translateX(.5rem);
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 3rem 0;
+	}
+}
+

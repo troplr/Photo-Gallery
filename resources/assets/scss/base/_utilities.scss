@@ -1,0 +1,7 @@
+.center{
+	@include center;
+}
+
+.dark{
+	color: $gray-500;
+}
