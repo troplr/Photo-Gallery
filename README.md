@@ -32,7 +32,7 @@ After downloading the app, open the project within **terminal** and run the foll
 - **composer install**  (takes few mins to install all dependencies)
 - **php artisan storage:link** (creating soft link to serve storge directory)
 
-**NOTE!** Need to have [Composer](https://www.mamp.info/en/) installed on you local machine to be able to run **composer install** commmand installing dependencies.
+**NOTE!** Need to have [Composer](https://getcomposer.org/) installed on you local machine to be able to run **composer install** commmand installing dependencies.
 
 ## Configuration
 You are able to use your own **Unsplash API Key** by configuring the **.env** file. however my API credentials are already set to use for 50 Free Requests/hr.
